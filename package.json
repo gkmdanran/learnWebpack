@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config build/base.config.js",
-    "serve": "webpack serve --config build/base.config.js",
+    "build": "webpack --config build/base.config.js  --env production",
+    "serve": "webpack serve --config build/base.config.js  --env development",
     "server": "node server.js"
   },
   "keywords": [],
@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "core-js": "^3.23.5",
+    "dayjs": "^1.11.4",
     "postcss-loader": "^7.0.1",
     "regenerator-runtime": "^0.13.9",
     "url-loader": "^4.1.1"

@@ -1,6 +1,6 @@
-const { add, multiple } = require('./src/js/math.js')
-const { splitString } = require('./src/js/split.js')
-const { getStrType } = require('./src/js/type.ts')
+const { add, multiple } = require('@/js/math.js')
+const { splitString } = require('@/js/split.js')
+const { getStrType } = require('@/js/type.ts')
 import './src/css/index.less'
 import a from './src/assets/a.png'
 const res1 = add(1, 2)
