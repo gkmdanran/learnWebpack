@@ -1,7 +1,7 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const TerserPlugin = require("terser-webpack-plugin");
 const MinCssExtractPlugin = require('mini-css-extract-plugin')
-
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 module.exports = {
     mode: 'production',
     optimization: {
@@ -20,6 +20,9 @@ module.exports = {
                     keep_classnames: true,
                     keep_fnames: true
                 }
+            }),
+            new CssMinimizerPlugin({
+                parallel: true
             })
         ]
     },
